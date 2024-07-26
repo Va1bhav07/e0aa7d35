@@ -4,8 +4,6 @@ import { Footer } from "./Footer";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 
-// import { grey } from "@mui/material/colors";
-
 function Layout({ children }) {
   return (
     <Stack sx={{ minHeight: "100%" }}>

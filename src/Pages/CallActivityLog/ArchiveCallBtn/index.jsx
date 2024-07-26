@@ -45,7 +45,6 @@ export const ArchiveCallBtn = ({ isArchive = false, callIds }) => {
           backgroundColor: "common.white",
           borderRadius: "10px",
           border: `1px solid ${grey[300]}`,
-          // alignItems: "center",
           justifyContent: "start",
           width: "100%",
           p: "16px",
@@ -56,12 +55,7 @@ export const ArchiveCallBtn = ({ isArchive = false, callIds }) => {
           },
         }}
       >
-        <Typography
-          // variant="subtitle1"
-          fontWeight="bold"
-          fontSize="14px"
-          color={primaryTxtColor}
-        >
+        <Typography fontWeight="bold" fontSize="14px" color={primaryTxtColor}>
           {`${isArchive ? "Unarchive" : "Archive"}  all calls`}
         </Typography>
       </Button>

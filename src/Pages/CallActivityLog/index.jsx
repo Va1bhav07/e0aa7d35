@@ -2,7 +2,6 @@ import React from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 
-// import { CallTabs } from "./CallTabsLab";
 import { CallTabs } from "./CallTabs";
 
 import { grey } from "@mui/material/colors";
@@ -12,7 +11,6 @@ const CallActivityLog = () => {
     <Box position="relative">
       <Stack
         direction="row"
-        // position="fixed"
         p={2}
         pb={1.6}
         borderBottom={`1px solid ${grey[200]}`}
@@ -20,8 +18,6 @@ const CallActivityLog = () => {
         sx={{ height: "30px", position: "absolute", left: 0, right: 0 }}
       >
         <svg
-          // width="486px"
-          // height="168px"
           viewBox="0 0 486 168"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

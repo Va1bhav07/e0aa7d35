@@ -6,7 +6,6 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import RadioButtonCheckedOutlinedIcon from "@mui/icons-material/RadioButtonCheckedOutlined";
 import Paper from "@mui/material/Paper";
-// import Box from "@mui/material/Box";
 
 export const Footer = () => {
   const [value, setValue] = React.useState(0);

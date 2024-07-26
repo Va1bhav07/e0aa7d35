@@ -42,13 +42,7 @@ export const CallTabs = () => {
   };
 
   return (
-    <Box
-    // sx={
-    //   {
-    //     // transform: "translate(0px, -54px)",
-    //   }
-    // }
-    >
+    <Box>
       <Box>
         <Tabs
           value={value}

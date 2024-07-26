@@ -20,7 +20,6 @@ export const ContactInfo = ({ callDetailsState }) => {
         border={`1px solid ${grey[300]}`}
         p={2}
         spacing={2}
-        // className="test"
         flex={1}
         backgroundColor="common.white"
       >

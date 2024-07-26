@@ -13,7 +13,6 @@ export const CallItemCard = ({ children, props }) => {
       p={2}
       pr={0}
       spacing={1}
-      // className="test"
       flex={1}
       backgroundColor="common.white"
       {...props}

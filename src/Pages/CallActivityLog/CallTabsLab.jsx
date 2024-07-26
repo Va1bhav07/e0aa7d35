@@ -35,7 +35,6 @@ export function CallTabs() {
                 justifyContent: "end",
               },
               "& button": {
-                // margin: "0 0 0 5px",
                 padding: 0,
                 minWidth: "80px ",
               },
