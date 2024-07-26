@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
@@ -13,10 +13,12 @@ import { CallerAvatar } from "./CallerAvatar";
 import { ContactInfo } from "./ContactInfo";
 import { ArchiveCall } from "./ArchiveCall";
 import Snackbar from "@mui/material/Snackbar";
+import { CallLogsContext } from "../../contexts/CallLogsContext";
 
 export const CallDetails = ({ callId, onBackBtn }) => {
   const [callDetailsState, setCallDetails] = useState({});
   const [alertState, setAlert] = useState(false);
+  const { setUpdate } = useContext(CallLogsContext);
 
   const handleClose = (event, reason) => {
     if (reason === "clickaway") {
@@ -53,6 +55,7 @@ export const CallDetails = ({ callId, onBackBtn }) => {
     });
     if (resp === "Call had been updated.") {
       setAlert(true);
+      setUpdate((prev) => !prev);
     }
   };
 

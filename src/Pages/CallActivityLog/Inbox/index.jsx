@@ -8,7 +8,7 @@ import { CallLogsContext } from "../../../contexts/CallLogsContext";
 import { CallDetails } from "../../CallDetails";
 
 export const Inbox = () => {
-  const { callLogsState: callLogs, setUpdate } = useContext(CallLogsContext);
+  const { callLogsState: callLogs } = useContext(CallLogsContext);
   const totalCalls = callLogs.unArchivedCalls;
   const isLoading = callLogs.isLoading;
   const unArchivedCallsData = Object.keys(callLogs.unArchivedCallsIdData);
@@ -20,7 +20,6 @@ export const Inbox = () => {
 
   const backBtnHandler = () => {
     setCallId("");
-    setUpdate((prev) => !prev);
   };
 
   if (callIdState) {
